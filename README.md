@@ -15,3 +15,5 @@ tae0_Git_Test
 * npm install gulp-sass@3.2.1
 * npm install gulp-concat@2.6.1
 * npm start
+
+* dist폴더에 생성된 html 확인.

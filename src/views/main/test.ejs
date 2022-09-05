@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<link href="../assets/img/tblogo_favicon_new.ico" rel="shortcut icon" />
 <link rel="stylesheet" href="../assets/front.main.css" />
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/detectizr/2.2.0/detectizr.min.js"></script>
@@ -15,1717 +14,453 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <script type="text/javascript" src="../assets/all.js"></script>
 </head>
-<body class="top-banner-wrap"><!-- 211125 이벤트팝업 노출시 active-event-popup 추가 -->
-<div id="page">
-	<!-- 220516 상단띠배너 추가 -->
-	<div class="top-banner-section">
-		<div class="top-banner-inner">
-			<span class="img">
-				<a href="#">
-					<img src="../assets/img/event/top_banner_220516.jpg" class="hidden-sm hidden-xs" alt="">
-					<img src="../assets/img/event/top_banner_220516_m.jpg" class="visible-xs-block" alt="">
-				</a>
-			</span>
-			<a href="#" class="btn-close" title="닫기">닫기</a>
-		</div>
-	</div>
-	<!-- //220516 상단띠배너 추가 -->
-	<!-- page-head -->
-	<div class="page-head page-head-v5"><!--  V5.0 page-head-v5 추가 -->
-		<h1 class="page-name">Talentbank</h1>
-		<!-- gnb -->
-		<div class="gnb gnb-new" id="globalNavigationBar"><!-- 20201223 gnb-new 추가 -->
-			<h2>Global Navigations</h2>
-			<!-- li에 현재 위치 addClass(current) -->
-			<ul class="gnb-list">
-				<li class="gnb-item"><a class="gnb-name" href="#">Client</a></li>
-				<li class="gnb-item"><a class="gnb-name" href="#">Expert</a></li>
-				<!-- <li class="gnb-item"><a class="gnb-name" href="#">articleT</a></li> -->
-			</ul>
-			<div class="gnb-wrap">
-				<strong>Top-class 전문가 매칭 플랫폼</strong>
-				<p>서비스 <span>바로가기</span></p>
-				<ul>
-					<li><a href="#" class="btn btn-pill btn-outline-primary btn-primary">Talentbank</a></li><!-- 220114 추가 -->
-					<li><a href="#" class="btn btn-pill btn-client">Client</a></li>
-					<li><a href="#" class="btn btn-pill btn-expert">Expert</a></li>
-					<li><a href="#" class="btn btn-pill btn-outline-primary btn-primary">articleT</a></li><!-- 211028 추가 -->
-				</ul>
+<body>
+	<div class="wrap">
+		<h1 class="logo">jQuery</h1>
+		<div class="contents">
+			<div class="dataList">
+				<table>
+					<colgroup>
+						<col style="width:160px;" />
+						<col />
+						<col style="width:160px;" />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">jquery</th>
+							<th scope="col">설명</th>
+							<th scope="col">jquery</th>
+							<th scope="col">설명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>attr()</td>
+							<td>선택자 속성값 가져오기</td>
+							<td>addClass()</td>
+							<td>선택자 클래스추가</td>
+						</tr>
+						<tr>
+							<td>removeClass()</td>
+							<td>선택자 클래스삭제</td>
+							<td>toggleClass()</td>
+							<td>선택자 클래스추가삭제</td>
+						</tr>
+						<tr>
+							<td>html()</td>
+							<td>선택자 html추가</td>
+							<td>text()</td>
+							<td>선택자 텍스트 가져오기</td>
+						</tr>
+						<tr>
+							<td>css()</td>
+							<td>선택자 css추가</td>
+							<td>offset()</td>
+							<td>선택자 현재 위치값</td>
+						</tr>
+						<tr>
+							<td>scrollTop()</td>
+							<td>현재 스크롤바의 위치값</td>
+							<td>scrollLeft()</td>
+							<td>스크롤바의 수평위치 X좌표 값</td>
+						</tr>
+						<tr>
+							<td>height()</td>
+							<td>선택자 높이값</td>
+							<td>width()</td>
+							<td>선택자 너비값</td>
+						</tr>
+						<tr>
+							<td>append()</td>
+							<td>선택자안 뒷부분에 추가</td>
+							<td>appendTo()</td>
+							<td>지정된 위치에 추가</td>
+						</tr>
+						<tr>
+							<td>after()</td>
+							<td>선택자 뒤에 추가</td>
+							<td>before()</td>
+							<td>선택자 앞에 추가</td>
+						</tr>
+						<tr>
+							<td>empty()</td>
+							<td>선택자내 문자삭제</td>
+							<td>remove()</td>
+							<td>선택자 삭제</td>
+						</tr>
+						<tr>
+							<td>children()</td>
+							<td>선택자의 자식요소</td>
+							<td>find()</td>
+							<td>선택자내 검색</td>
+						</tr>
+						<tr>
+							<td>next()</td>
+							<td>선택자의 다음선택자</td>
+							<td>nextAll()</td>
+							<td>선택자 다음 모든 선택자</td>
+						</tr>
+						<tr>
+							<td>parent()</td>
+							<td>선택자 포함한 모든부모요소</td>
+							<td>parents()</td>
+							<td>선택자 포함한 부모요소</td>
+						</tr>
+						<tr>
+							<td>prev()</td>
+							<td>선택자 전대상</td>
+							<td>prevAll()</td>
+							<td>선택자 모든전대상</td>
+						</tr>
+						<tr>
+							<td>siblings()</td>
+							<td>선택자 형제요소</td>
+							<td>on()</td>
+							<td>이벤트 연결함</td>
+						</tr>
+						<tr>
+							<td>bind()</td>
+							<td>이벤트 연결함</td>
+							<td>change()</td>
+							<td>대상이 바뀌는 지 감지하여 실행</td>
+						</tr>
+						<tr>
+							<td>click()</td>
+							<td>클릭시 실행</td>
+							<td>dblclick()</td>
+							<td>더블클릭시 실행</td>
+						</tr>
+						<tr>
+							<td>focus()</td>
+							<td>포커스를 얻었을때 실행</td>
+							<td>focusin()</td>
+							<td>포커스가 들어왔을때</td>
+						</tr>
+						<tr>
+							<td>focusout</td>
+							<td>포커스가 나갔을때</td>
+							<td>keydown()</td>
+							<td>키를 누를때</td>
+						</tr>
+						<tr>
+							<td>keypress()</td>
+							<td>연속으로 빨리 keydown이 일어날때</td>
+							<td>keyup()</td>
+							<td>키를 뗄때</td>
+						</tr>
+						<tr>
+							<td>mousedown()</td>
+							<td>마우스 버튼를 누를때</td>
+							<td>mouseenter()</td>
+							<td>마우스 요소의 경계 외부에서 내부로 이동할 때 발생</td>
+						</tr>
+						<tr>
+							<td>mouseleave()</td>
+							<td>마우스 요소의 경계 내부에서 외부로 이동할 때 발생</td>
+							<td>mousemove()</td>
+							<td>마우스를 움직일 때 발생함</td>
+						</tr>
+						<tr>
+							<td>mouseout()</td>
+							<td>마우스가 요소를 벗어날 때 발생함</td>
+							<td>mouseover()</td>
+							<td>마우스를 요소 안에 들어올 때 발생함</td>
+						</tr>
+						<tr>
+							<td>mouseup()</td>
+							<td>마우스 버튼을 뗄 때 발생함</td>
+							<td>resize()</td>
+							<td>윈도우의 크기를 변화시킬 때 발생함</td>
+						</tr>
+						<tr>
+							<td>scroll()</td>
+							<td>윈도우를 스크롤할 때 발생함</td>
+							<td>unload()</td>
+							<td>윈도우(문서 객체)를 닫을 때 발생</td>
+						</tr>
+						<tr>
+							<td>show()</td>
+							<td>문서 객체를 크게 하며 보여줌</td>
+							<td>hide()</td>
+							<td>문서 객체를 작게 하며 사라지게 함</td>
+						</tr>
+						<tr>
+							<td>slideDown()</td>
+							<td>문서 객체를 슬라이드 효과와 함께 보여줌</td>
+							<td>slideUp()</td>
+							<td>문서 객체를 슬라이드 효과와 함께 사라지게 함</td>
+						</tr>
+						<tr>
+							<td>slideToggle()</td>
+							<td>slideDown() 메서드와 slideUp() 메서드를 번갈아 실행함</td>
+							<td>fadeIn()</td>
+							<td>문서 객체를 선명하게 하며 보여줌</td>
+						</tr>
+						<tr>
+							<td>fadeOut()</td>
+							<td>문서 객체를 흐리게 하며 사라지게 함</td>
+							<td>fadeTo()</td>
+							<td>대상을 시간동안 투명도를 적용</td>
+						</tr>
+						<tr>
+							<td>fadeToggle()</td>
+							<td>fadeln() 메서드와 fadeOut() 메서드를 번갈아 실행함</td>
+							<td>animate()</td>
+							<td>사용자 지정 효과를 생성함</td>
+						</tr>
+						<tr>
+							<td>stop()</td>
+							<td>효과와 애니메이션을 정지함</td>
+							<td>delay()</td>
+							<td>큐에 있는 명령을 잠시 중지함</td>
+						</tr>
+						<tr>
+							<td>each()</td>
+							<td>대상 수 많큼 반복하여 실행</td>
+							<td>event.preventDefault()</td>
+							<td>기본 이벤트를 제거함</td>
+						</tr>
+						<tr>
+							<td>event.stopPropagation()</td>
+							<td>이벤트 전달을 제거함</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<h3 class="stit">☆</h3>
+			<div class="dataList">
+				<table>
+					<colgroup>
+						<col style="width:160px;" />
+						<col />
+						<col style="width:160px;" />
+						<col />
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">jquery</th>
+							<th scope="col">설명</th>
+							<th scope="col">jquery</th>
+							<th scope="col">설명</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>prop()</td>
+							<td>JavaScript의 프로파티(property)를 취급하는 메소드</td>
+							<td>var()</td>
+							<td>폼의 value 가져오기</td>
+						</tr>
+						<tr>
+							<td>innerHeight()</td>
+							<td>padding 포함 높이 제어</td>
+							<td>inerWidth()</td>
+							<td>padding을 포함한 넓이 제어</td>
+						</tr>
+						<tr>
+							<td>outerHeight()</td>
+							<td>border포함 높이 구하기</td>
+							<td>outerWidth()</td>
+							<td>border 포함 넓이 구하기</td>
+						</tr>
+						<tr>
+							<td>prepend()</td>
+							<td>선택된 모든 요소의 앞에 추가하기</td>
+							<td>prependTo()</td>
+							<td>선택된 모든 요소의 앞에 추가하기2</td>
+						</tr>
+						<tr>
+							<td>clone()</td>
+							<td>요소 복사하기</td>
+							<td>nextUntil()</td>
+							<td>조건이 맞을 때까지 쭈욱</td>
+						</tr>
+						<tr>
+							<td>offsetParent()</td>
+							<td>position으로 부모 찾기</td>
+							<td>parentsUntil()</td>
+							<td>특정 부모를 찾을 때까지</td>
+						</tr>
+						<tr>
+							<td>prevUntil()</td>
+							<td>특정 조건을 만날 때까지 이전 요소들을 쭈욱</td>
+							<td>add()</td>
+							<td>선택요소 확장하기</td>
+						</tr>
+						<tr>
+							<td>contents()</td>
+							<td>텍스트 노드를 포함한 자식요소 가져오기</td>
+							<td>end()</td>
+							<td>이전 선택요소로 돌아가기</td>
+						</tr>
+						<tr>
+							<td>off()</td>
+							<td>이벤트 해제하기</td>
+							<td>one()</td>
+							<td>이벤트 발생하면 바인딩 자동해제</td>
+						</tr>
+						<tr>
+							<td>trigger()</td>
+							<td>함수 실행시키기</td>
+							<td>blur()</td>
+							<td>포커스 잃을 때 이벤트</td>
+						</tr>
+						<tr>
+							<td>error()</td>
+							<td>error 발생시</td>
+							<td>select()</td>
+							<td>select 선택시</td>
+						</tr>
+						<tr>
+							<td>$.inArray()</td>
+							<td>배열 내의 값을 찾아서 인덱스를 반환</td>
+							<td>$.toArray</td>
+							<td>컬렉션 형태로 되어 있는 것들을 배열로 리턴</td>
+						</tr>
+						<tr>
+							<td>param()</td>
+							<td>Ajax 데이터용 배열이나 객체를 직렬화</td>
+							<td>$.trim()</td>
+							<td>양쪽 공백 제거</td>
+						</tr>
+						<tr>
+							<td>event.pageX</td>
+							<td>브라우저의 화면을 기준으로 한 마우스의 X좌표 위치</td>
+							<td>event.pageY</td>
+							<td>브라우저의 화면을 기중으로 한 마우스의 Y좌표 위치</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<h3 class="stit">자바스크립트 배열에서 사용할 수 있는 메소드 목록</h3>
+			<div class="dataList">
+				<table border="1">
+					<colgroup>
+						<col style="width:160px;" />
+						<col />
+					</colgroup>
+					<tbody>
+					<tr>
+					   <th><span>메소드</span></th>
+						<th><span>기능</span></th>
+					</tr>
+					<tr>
+						<td><span><b>concat()</b></span></td>
+						<td><span>두개 또는 그 이상의 배열을 연결한 배열을 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>copyWithin()</b></span></td>
+						<td><span>배열 내에서 첫 번째 인자 위치의 요소를 두 번째 인자 위치에 복사합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>every()</b></span></td>
+						<td><span>인자로 주어진 함수로 배열내의 모든 요소를 테스트해서 참일 경우 true를 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>fill()</b></span></td>
+						<td><span>배열내의 모든 요소의 값을 주어진 값으로 채웁니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>filter()</b></span></td>
+						<td><span>인자로 주어진 함수로 배열내의 모든 요소를 테스트해서 참인 요소만으로 만들어진 배열을 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>find()</b></span></td>
+						<td><span>인자로 주어진 함수로 배열내의 요소를 테스트해서 참인 첫 번째 요소를 반환 합니다. 찾지 못하면 undefined를 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>findIndex()</b></span></td>
+						<td><span>인자로 주어진 함수로 배열내의 요소를 테스트해서 참인 첫 번째 요소의 인덱스를 반환합니다. 찾지 못하면 -1을 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>forEach()</b></span></td>
+						<td><span>배열내의 모든 요소에 대해 인자로 주어진 함수를 실행합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>indexOf()</b></span></td>
+						<td><span>인자로 주어진 값과 같은 값을 가지는 첫 번째 요소의 인덱스를 반환합니다. 찾지 못하면 -1을 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>isArray()</b></span></td>
+						<td><span>인자로 주어진 객체가 배열이면 true를 반환합니다. Array.isArray(object);</span></td>
+					</tr>
+					<tr>
+						<td><span><b>join()</b></span></td>
+						<td><span>배열의 모든 요소를 인자로 주어진 분리자로 연결한 문자열을 반환합니다. 분리자를 주지 않으면 콤마(,)가 분리자 입니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>lastIndexOf()</b></span></td>
+						<td><span>인자로 주어진 값을 배열의 뒤에서 부터 찾아서 첫 번째로 발견된 요소의 인덱스를 반환합니다. 찾지 못하면 -1을 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>map()</b></span></td>
+						<td><span>인자로 주어진 함수에 모든 각각의 요소를 적용한 값으로 이루어진 배열을 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>pop()</b></span></td>
+						<td><span>배열의 마지막 요소를 제거하고, 제거된 요소를 반환합니다. 배열의 길이가 1 줄어 듭니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>push()</b></span></td>
+						<td><span>배열의 끝에 인자로 주어진 같을 추가 합니다. 새 배열의 길이를 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>reduce()</b></span></td>
+						<td><span>인자로 주어진 함수를 모든 요소에 적용하여 만들어진 단일 값을 반환합니다. 배열 요소에 대해 왼쪽에서 오른쪽으로 적용해 나갑니다. array.reduce(function(total, currentValue, currentIndex, arr), initialValue)</span></td>
+					</tr>
+					<tr>
+						<td nowrap=""><span><b>reduceRight()</b></span></td>
+						<td><span>reduce() 와 같은 기능을 배열 요소에 대해 오른쪽에서 왼쪽으로 적용해 나갑니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>reverse()</b></span></td>
+						<td><span>배열 요소의 순서가 뒤집힌 배열을 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>shift()</b></span></td>
+						<td><span>배열에서 첫번째 요소를 제거하고, 제거된 요소를 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>slice()</b></span></td>
+						<td><span>배열의 일부분을 잘라서 배열로 반환합니다. array.slice(start, end)</span></td>
+					</tr>
+					<tr>
+						<td><span><b>some()</b></span></td>
+						<td><span>인자로 주어진 함수를 배열의 요소에 대해서 적용해서 하나라도 참이면 true 를 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>sort()</b></span></td>
+						<td><span>배열의 요소를 정렬합니다. 인자로 정렬에 사용될 비교 함수를 줄수 있습니다. 인자가 없으면 알파벳순으로 오른차순으로 정렬합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>splice()</b></span></td>
+						<td><span>배열에 요소를 추가 또는 삭제 합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>toString()</b></span></td>
+						<td><span>배열을 문자열로 변환하여 그 결과를 반환합니다.분리자로 콤마가 사용됩니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>unshift()</b></span></td>
+						<td><span>배열의 첫 번째 자리에 새 요소를 추가합니다. 새로운 배열의 길이를 반환합니다.</span></td>
+					</tr>
+					<tr>
+						<td><span><b>valueOf()</b></span></td>
+						<td><span>배열 그 자체를 반환합니다.var b = a.valueOf(); 라면 a === b 입니다.</span></td>
+					</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
-		<!-- //gnb -->
-
-		<!-- page-util -->
-		<div class="page-util util-v2">
-			<h2>Go to Service</h2>
-			<ul class="data-list">
-			<li class="data-item notice new"><a class="data-name btn-notice-popup" href="#Notice-popup">새로운 알림</a></li>
-			<li class="data-item notice new"><a class="data-name" href="#">공지사항</a></li>
-			<li class="data-item"><a class="data-name" href="#">이용안내</a></li><!-- 220518 추가 -->
-			<li class="data-item"><a class="data-name" href="#">성공사례</a></li><!-- 220718 추가 -->
-			</ul>
-		</div>
-		<!-- //page-util -->
 	</div>
-	<!-- //page-head -->
-	<hr />
-	<!-- page-body -->
-	<div class="page-body page-body-v5" id="local"><!--  V5.0 page-body-v5 추가 -->
-		<!-- local-body -->
-		<div class="local-body" id="content">
-			<!-- content-body -->
-			<div class="content-body client-main-v5">
-				<!-- 220406 슬라이드 추가 -->
-				<div class="main-visual-top slide-type">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<!-- 220718추가 -->
-							<div class="swiper-slide">
-								<div class="bg4"></div>
-								<p class="txt02">온라인자문 서비스 <span class="text-client">원포인T</span> 론칭 </p>
-								<p class="txt01">비즈니스 고민해결<br>쉽고 빠르게!</p>
-								<p class="txt03">합리적인 가격으로 <span class="wbr">검증된 전문가와 직접 만나세요.</span></p>
-								<div class="btn-area">
-									<a href="#" class="btn btn-md btn-pill btn-client">온라인자문 소개</a>
-								</div>
-							</div>
-							<!-- //220718추가 -->
-							<div class="swiper-slide">
-								<div class="bg2"></div>
-								<p class="txt01 text-right text-white">탤런트뱅크<br>TV CF 온에어</p>
-								<p class="txt02 text-right text-white">외롭고 고독한 CEO의 고민,<br>검증된 전문가가 직접 해결합니다.</p>
-								<div class="btn-area">
-									<a href="#" class="btn btn-md btn-pill btn-outline-client btn-client">디지털 편</a>
-									<a href="#" class="btn btn-md btn-pill btn-outline-client btn-client">해외진출 편</a>
-									<a href="#" class="btn btn-md btn-pill btn-outline-client btn-client">투자 편</a>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="bg1"></div>
-								<p class="txt01">기업의 비즈니스 고민,<br>검증된 전문가가 직접 해결합니다.</p>
-								<p class="txt02">내 사업에 필요한 순간, 필요한 만큼<br>전문가와 연결합니다.</p>
-								<div class="btn-area">
-									<a href="#" class="btn btn-md btn-pill btn-outline-client btn-client">서비스 소개</a>
-									<a href="#" class="btn btn-md btn-pill btn-client">Project 의뢰</a>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="bg3"></div>
-								<p class="txt01 text-white">아직도 많은 기업들에게<br>당신이 필요합니다.</p>
-								<p class="txt02 text-white">탤런트뱅크 전문가가 되어보세요!</p>
-								<div class="btn-area">
-									<a href="#" class="btn btn-md btn-pill btn-outline-client btn-client">Expert 가입하기</a>
-									<a href="#" class="btn btn-md btn-pill btn-outline-client btn-client">이용안내</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<button type="button" class="swiper-button-direction swiper-button-prev"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>이전</title><path d="M7.581,12l10.96,10.96l-1.061,1.061L5.459,12L17.48-0.021l1.061,1.061L7.581,12z"></path></svg></button><!-- 220418 수정 -->
-					<button type="button" class="swiper-button-direction swiper-button-next"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>다음</title><path d="M5.459,1.04L6.52-0.021L18.541,12L6.52,24.021L5.459,22.96L16.42,12L5.459,1.04z"></path></svg></button><!-- 220418 수정 -->
-					<div class="swiper-pagination"></div>
-				</div>
-				<!-- //220406 슬라이드 추가 -->
-				<div class="section specialization-section">
-					<h3 class="section-title">Talentbank <strong>전문 분야</strong>
-						<i class="fab fa-instagram"></i></h3>
-					<div class="swiper-container">
-						<div class="swiper-wrapper specialization-list">
-							<div class="swiper-slide posts-item">
-								<a href="#">
-									<span class="icon icon-01"></span>
-									<span class="text">경영전략 · 신사업</span>
-								</a>
-							</div>
-							<div class="swiper-slide posts-item">
-								<a href="#">
-									<span class="icon icon-02"></span>
-									<span class="text">인사 · 총무</span>
-								</a>
-							</div>
-							<div class="swiper-slide posts-item">
-								<a href="#">
-									<span class="icon icon-03"></span>
-									<span class="text">재무 · 투자</span>
-								</a>
-							</div>
-							<div class="swiper-slide posts-item active">
-								<a href="#">
-									<span class="icon icon-04"></span>
-									<span class="text">IT</span>
-								</a>
-							</div>
-							<div class="swiper-slide posts-item">
-								<a href="#">
-									<span class="icon icon-05"></span>
-									<span class="text">디자인</span>
-								</a>
-							</div>
-							<div class="swiper-slide posts-item">
-								<a href="#">
-									<span class="icon icon-06"></span>
-									<span class="text">마케팅</span>
-								</a>
-							</div>
-							<div class="swiper-slide posts-item">
-								<a href="#">
-									<span class="icon icon-08"></span>
-									<span class="text">영업 · 구매 · 유통</span>
-								</a>
-							</div>
-							<div class="swiper-slide posts-item">
-								<a href="#">
-									<span class="icon icon-09"></span>
-									<span class="text">엔지니어링</span>
-								</a>
-							</div>
-							<div class="swiper-slide posts-item">
-								<a href="#">
-									<span class="icon icon-10"></span>
-									<span class="text">법무 · 대정부</span>
-								</a>
-							</div>
-							<div class="swiper-slide posts-item">
-								<a href="#">
-									<span class="icon icon-11"></span>
-									<span class="text">Others</span>
-								</a>
-							</div>
-						</div>
-					</div>
-					<button type="button" class="swiper-button-direction swiper-button-prev"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>이전</title><path d="M7.581,12l10.96,10.96l-1.061,1.061L5.459,12L17.48-0.021l1.061,1.061L7.581,12z"></path></svg></button>
-					<button type="button" class="swiper-button-direction swiper-button-next"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>다음</title><path d="M5.459,1.04L6.52-0.021L18.541,12L6.52,24.021L5.459,22.96L16.42,12L5.459,1.04z"></path></svg></button>
-					<div class="swiper-pagination"></div>
-				</div>
-				<div class="section business-case business-v2-type" id="businessCase">
-					<h3 class="section-title"><span class="wbr">Talentbank <strong>성공 사례</strong></span></h3>
-					<div class="tab-list swiper-container">
-						<div class="tab-list-swiper-wrapper swiper-wrapper">
-							<span class="swiper-slide tab-item current"><a class="tab-name" href="#businessCaseProject" id="btnBusinessCaseProject">프로젝트</a></span>
-							<span class="swiper-slide tab-item"><a class="tab-name" href="#businessCaseHeadHunting" id="btnBusinessCaseHeadHunting">헤드헌팅</a></span>
-							<span class="swiper-slide tab-item"><a class="tab-name" href="#businessCaseAdvice" id="btnBusinessCaseAdvice">단기자문</a></span>
-							<span class="swiper-slide tab-item double"><a class="tab-name" href="#businessCaseFuncWork" id="btnBusinessCaseFuncWork">Functional Work</a></span>
-						</div>
-					</div>
-
-					<!-- swiper-container :: 프로젝트-->
-					<div class="swiper-container active" id="businessCaseProject">
-						<div class="swiper-wrapper">
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">급여체계 및 수당 규정 컨설팅</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<!-- <span class="avatar bg1">A</span> -->
-												<span class="avatar" style="background-image: url(../assets/img/main/expert-thumb-1.jpg)"></span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>SK텔레콤, 삼성물산 등을 거친 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>8회 미팅을 하며, 총 70페이지 분량의 기획서 제공</li>
-													<li>중소기업 대표이사의 감이 아닌 충분한 시장조사 Data와 세부 전략을 통해 신사업 진출 성공</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#"><p class="para">520만원 / 주 2회 미팅 + 재택근무<span class="small">(주 당 130만원 / 4주)</span></p></a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">헬스케어 전자기기 사업분야 경영 컨설팅</a></span>
-										<span class="small">헬스케어 전자기기 제조/판매업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg1">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>글로벌 넘버원 부동산 자산관리사인 CBRE에서 상업시설 개발기획, MD수립, 브랜드유치운영 등을 경험한 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>직원 급여제도 설계 및 테이블 수립 - 기본급 및 각종 수당제도 변경</li>
-													<li>급여제도 변경에 따른 증감 예산 추정 및 조정 Option(안) 마련</li>
-													<li>전사 직원 설명회 개최를 통해 변경사항에 대한 안내</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">출장경비 + 성공보수금 <span class="small">(매출의 N%)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg2">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>대한전선, 포스코 정비본부, 현대제철(당진제철소 건설) 전기전자본부 팀장 출신 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>설비이력 및 정비실적 관리 문서 표준화,  예방보전계획 및 수리자애 재고관리 수립</li>
-													<li>독일의 핵심설비를 일부 튜닝, 생산 속도 향상, 정비 부품의 국산화로 정비시간과 비용 절감</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">400만원 / 월 8회 <span class="small">(1일 50만원 X 8회)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg3">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>글로벌 넘버원 부동산 자산관리사인 CBRE에서 상업시설 개발기획, MD수립, 브랜드유치운영 등을 경험한 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>직원 급여제도 설계 및 테이블 수립 - 기본급 및 각종 수당제도 변경</li>
-													<li>급여제도 변경에 따른 증감 예산 추정 및 조정 Option(안) 마련</li>
-													<li>전사 직원 설명회 개최를 통해 변경사항에 대한 안내</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">출장경비 + 성공보수금 <span class="small">(매출의 N%)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-						</div>
-						<!--<div class="swiper-pagination"></div>-->
-					</div>
-					<div class="swiper-btn-area">
-						<button type="button" class="swiper-button-direction swiper-button-prev"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>이전</title><path d="M7.581,12l10.96,10.96l-1.061,1.061L5.459,12L17.48-0.021l1.061,1.061L7.581,12z"></path></svg></button>
-						<button type="button" class="swiper-button-direction swiper-button-next"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>다음</title><path d="M5.459,1.04L6.52-0.021L18.541,12L6.52,24.021L5.459,22.96L16.42,12L5.459,1.04z"></path></svg></button>
-						<div class="swiper-pagination"></div>
-					</div>
-					<!-- //swiper-container :: 프로젝트-->
-
-					<!-- swiper-container :: 단기 자문-->
-					<div class="swiper-container" id="businessCaseAdvice">
-						<div class="swiper-wrapper">
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg1">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>SK텔레콤, 삼성물산 등을 거친 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>8회 미팅을 하며, 총 70페이지 분량의 기획서 제공</li>
-													<li>중소기업 대표이사의 감이 아닌 충분한 시장조사 Data와 세부 전략을 통해 신사업 진출 성공</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#"><p class="para">520만원 / 주 2회 미팅 + 재택근무<span class="small">(주 당 130만원 / 4주)</span></p></a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg1">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>글로벌 넘버원 부동산 자산관리사인 CBRE에서 상업시설 개발기획, MD수립, 브랜드유치운영 등을 경험한 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>직원 급여제도 설계 및 테이블 수립 - 기본급 및 각종 수당제도 변경</li>
-													<li>급여제도 변경에 따른 증감 예산 추정 및 조정 Option(안) 마련</li>
-													<li>전사 직원 설명회 개최를 통해 변경사항에 대한 안내</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">출장경비 + 성공보수금 <span class="small">(매출의 N%)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg2">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>대한전선, 포스코 정비본부, 현대제철(당진제철소 건설) 전기전자본부 팀장 출신 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>설비이력 및 정비실적 관리 문서 표준화,  예방보전계획 및 수리자애 재고관리 수립</li>
-													<li>독일의 핵심설비를 일부 튜닝, 생산 속도 향상, 정비 부품의 국산화로 정비시간과 비용 절감</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">400만원 / 월 8회 <span class="small">(1일 50만원 X 8회)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg3">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>글로벌 넘버원 부동산 자산관리사인 CBRE에서 상업시설 개발기획, MD수립, 브랜드유치운영 등을 경험한 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>직원 급여제도 설계 및 테이블 수립 - 기본급 및 각종 수당제도 변경</li>
-													<li>급여제도 변경에 따른 증감 예산 추정 및 조정 Option(안) 마련</li>
-													<li>전사 직원 설명회 개최를 통해 변경사항에 대한 안내</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">출장경비 + 성공보수금 <span class="small">(매출의 N%)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!--<div class="swiper-pagination"></div>-->
-					</div>
-					<div class="swiper-btn-area">
-						<button type="button" class="swiper-button-direction swiper-button-prev"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>이전</title><path d="M7.581,12l10.96,10.96l-1.061,1.061L5.459,12L17.48-0.021l1.061,1.061L7.581,12z"></path></svg></button>
-						<button type="button" class="swiper-button-direction swiper-button-next"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>다음</title><path d="M5.459,1.04L6.52-0.021L18.541,12L6.52,24.021L5.459,22.96L16.42,12L5.459,1.04z"></path></svg></button>
-						<div class="swiper-pagination"></div>
-					</div>
-					<!-- //swiper-container :: 단기 자문-->
-
-					<!-- swiper-container :: 헤드헌팅-->
-					<div class="swiper-container expert-color" id="businessCaseHeadHunting">
-						<div class="swiper-wrapper">
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg1">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>SK텔레콤, 삼성물산 등을 거친 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>8회 미팅을 하며, 총 70페이지 분량의 기획서 제공</li>
-													<li>중소기업 대표이사의 감이 아닌 충분한 시장조사 Data와 세부 전략을 통해 신사업 진출 성공</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#"><p class="para">520만원 / 주 2회 미팅 + 재택근무<span class="small">(주 당 130만원 / 4주)</span></p></a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg1">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>글로벌 넘버원 부동산 자산관리사인 CBRE에서 상업시설 개발기획, MD수립, 브랜드유치운영 등을 경험한 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>직원 급여제도 설계 및 테이블 수립 - 기본급 및 각종 수당제도 변경</li>
-													<li>급여제도 변경에 따른 증감 예산 추정 및 조정 Option(안) 마련</li>
-													<li>전사 직원 설명회 개최를 통해 변경사항에 대한 안내</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">출장경비 + 성공보수금 <span class="small">(매출의 N%)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg2">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>대한전선, 포스코 정비본부, 현대제철(당진제철소 건설) 전기전자본부 팀장 출신 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>설비이력 및 정비실적 관리 문서 표준화,  예방보전계획 및 수리자애 재고관리 수립</li>
-													<li>독일의 핵심설비를 일부 튜닝, 생산 속도 향상, 정비 부품의 국산화로 정비시간과 비용 절감</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">400만원 / 월 8회 <span class="small">(1일 50만원 X 8회)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg3">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>글로벌 넘버원 부동산 자산관리사인 CBRE에서 상업시설 개발기획, MD수립, 브랜드유치운영 등을 경험한 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>직원 급여제도 설계 및 테이블 수립 - 기본급 및 각종 수당제도 변경</li>
-													<li>급여제도 변경에 따른 증감 예산 추정 및 조정 Option(안) 마련</li>
-													<li>전사 직원 설명회 개최를 통해 변경사항에 대한 안내</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">출장경비 + 성공보수금 <span class="small">(매출의 N%)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-						</div>
-						<!--<div class="swiper-pagination"></div>-->
-					</div>
-					<div class="swiper-btn-area">
-						<button type="button" class="swiper-button-direction swiper-button-prev"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>이전</title><path d="M7.581,12l10.96,10.96l-1.061,1.061L5.459,12L17.48-0.021l1.061,1.061L7.581,12z"></path></svg></button>
-						<button type="button" class="swiper-button-direction swiper-button-next"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>다음</title><path d="M5.459,1.04L6.52-0.021L18.541,12L6.52,24.021L5.459,22.96L16.42,12L5.459,1.04z"></path></svg></button>
-						<div class="swiper-pagination"></div>
-					</div>
-					<!-- //swiper-container :: 헤드헌팅-->
-
-					<!-- swiper-container :: functional_work-->
-					<div class="swiper-container expert-color" id="businessCaseFuncWork">
-						<div class="swiper-wrapper">
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg1">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>SK텔레콤, 삼성물산 등을 거친 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>8회 미팅을 하며, 총 70페이지 분량의 기획서 제공</li>
-													<li>중소기업 대표이사의 감이 아닌 충분한 시장조사 Data와 세부 전략을 통해 신사업 진출 성공</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#"><p class="para">520만원 / 주 2회 미팅 + 재택근무<span class="small">(주 당 130만원 / 4주)</span></p></a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg1">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>글로벌 넘버원 부동산 자산관리사인 CBRE에서 상업시설 개발기획, MD수립, 브랜드유치운영 등을 경험한 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>직원 급여제도 설계 및 테이블 수립 - 기본급 및 각종 수당제도 변경</li>
-													<li>급여제도 변경에 따른 증감 예산 추정 및 조정 Option(안) 마련</li>
-													<li>전사 직원 설명회 개최를 통해 변경사항에 대한 안내</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">출장경비 + 성공보수금 <span class="small">(매출의 N%)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg2">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>대한전선, 포스코 정비본부, 현대제철(당진제철소 건설) 전기전자본부 팀장 출신 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>설비이력 및 정비실적 관리 문서 표준화,  예방보전계획 및 수리자애 재고관리 수립</li>
-													<li>독일의 핵심설비를 일부 튜닝, 생산 속도 향상, 정비 부품의 국산화로 정비시간과 비용 절감</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">400만원 / 월 8회 <span class="small">(1일 50만원 X 8회)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-							<!-- swiper-slide -->
-							<div class="subsection swiper-slide">
-								<div class="subsection-left">
-									<h4 class="subsection-title">
-										<span class="big"><a href="#">신사업 진출을 위한 사업계획 수립</a></span>
-										<span class="small">부동산 자산관리업</span>
-									</h4>
-									<div class="posts-foot">
-										<a href="#">
-											<div class="posts-face user-face active">
-												<span class="avatar bg3">A</span>
-											</div>
-										</a>
-										<div class="user-name"><a href="#">ACE**</a></div>
-									</div>
-								</div>
-								<ul class="data-list">
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">전문가 매칭</span>
-											<a href="#">
-												<ul class="data-list">
-													<li>글로벌 넘버원 부동산 자산관리사인 CBRE에서 상업시설 개발기획, MD수립, 브랜드유치운영 등을 경험한 전문가 매칭</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">Project 성과</span>
-											<a href="#">
-												<ul class="data-list theme-a type-a">
-													<li>직원 급여제도 설계 및 테이블 수립 - 기본급 및 각종 수당제도 변경</li>
-													<li>급여제도 변경에 따른 증감 예산 추정 및 조정 Option(안) 마련</li>
-													<li>전사 직원 설명회 개최를 통해 변경사항에 대한 안내</li>
-												</ul>
-											</a>
-										</div>
-									</li>
-									<li class="data-item">
-										<div class="disp-flex">
-											<span class="data-name">소요 비용</span>
-											<a href="#">
-												<p class="para">출장경비 + 성공보수금 <span class="small">(매출의 N%)</span></p>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- //swiper-slide -->
-						</div>
-						<!--<div class="swiper-pagination"></div>-->
-					</div>
-					<div class="swiper-btn-area">
-						<button type="button" class="swiper-button-direction swiper-button-prev"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>이전</title><path d="M7.581,12l10.96,10.96l-1.061,1.061L5.459,12L17.48-0.021l1.061,1.061L7.581,12z"></path></svg></button>
-						<button type="button" class="swiper-button-direction swiper-button-next"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>다음</title><path d="M5.459,1.04L6.52-0.021L18.541,12L6.52,24.021L5.459,22.96L16.42,12L5.459,1.04z"></path></svg></button>
-						<div class="swiper-pagination"></div>
-					</div>
-					<!-- //swiper-container :: functional_work-->
-
-					<div class="section-aside">
-						<a href="#" class="more-data">전체보기</a>
-					</div>
-				</div>
-				<!-- //section -->
-
-				<script type="text/javascript">
-					$(function() {
-						// 스와이프 마지막 및 맨 처음에서 다음/이전 탭으로 넘어감...
-						$("#businessCase button.swiper-button-next").click(function() {
-							var isLast = $(this).hasClass("swiper-button-disabled");
-							if (isLast) {
-								var divId = $(this).parent().prev("div").attr("id");
-								
-								if (divId == "businessCaseProject") {
-									$("#btnBusinessCaseHeadHunting").click();
-								} else if (divId == "businessCaseHeadHunting") {
-									$("#btnBusinessCaseAdvice").click();
-								} else if (divId == "businessCaseAdvice") {
-									$("#btnBusinessCaseFuncWork").click();
-								} else if (divId == "businessCaseFuncWork") {
-									$("#btnBusinessCaseProject").click();
-								}
-							}
-							
-						});
-						
-						$("#businessCase button.swiper-button-prev").click(function() {
-							var isFirst = $(this).hasClass("swiper-button-disabled");
-							if (isFirst) {
-								var divId = $(this).parent().prev("div").attr("id");
-								
-								if (divId == "businessCaseProject") {
-									$("#btnBusinessCaseFuncWork").click();
-								} else if (divId == "businessCaseHeadHunting") {
-									$("#btnBusinessCaseProject").click();
-								} else if (divId == "businessCaseAdvice") {
-									$("#btnBusinessCaseHeadHunting").click();
-								} else if (divId == "businessCaseFuncWork") {
-									$("#btnBusinessCaseAdvice").click();
-								}
-							}
-						});
-					});
-				</script>
-				<div class="section client-expert-review">
-					<h3 class="section-title">Client <strong>이용 후기</strong></h3>
-					<div class="swiper-container">
-						<div class="swiper-wrapper client-expert-review-list">
-							<div class="subsection swiper-slide">
-								<div class="review-text">
-									<p class="txt01 text-client">밀키트 공정 및 생산 관리 관련 자문 요청</p>
-									<p class="txt02">Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다.</p>
-								</div>
-							</div>
-							<div class="subsection swiper-slide">
-								<div class="review-text">
-									<p class="txt01 text-client">자동차 부품 구매소싱처 발굴 및 비메모리 반도체 유통 전문가 의뢰</p>
-									<p class="txt02">Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다.</p>
-								</div>
-							</div>
-							<div class="subsection swiper-slide">
-								<div class="review-text">
-									<p class="txt01 text-client">밀키트 공정 및 생산 관리 관련 자문 요청</p>
-									<p class="txt02">Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다.</p>
-								</div>
-							</div>
-							<div class="subsection swiper-slide">
-								<div class="review-text">
-									<p class="txt01 text-client">밀키트 공정 및 생산 관리 관련 자문 요청</p>
-									<p class="txt02">Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다.</p>
-								</div>
-							</div>
-							<div class="subsection swiper-slide">
-								<div class="review-text">
-									<p class="txt01 text-client">밀키트 공정 및 생산 관리 관련 자문 요청</p>
-									<p class="txt02">Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다.</p>
-								</div>
-							</div>
-							<div class="subsection swiper-slide">
-								<div class="review-text">
-									<p class="txt01 text-client">밀키트 공정 및 생산 관리 관련 자문 요청</p>
-									<p class="txt02">Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다.</p>
-								</div>
-							</div>
-							<div class="subsection swiper-slide">
-								<div class="review-text">
-									<p class="txt01 text-client">밀키트 공정 및 생산 관리 관련 자문 요청</p>
-									<p class="txt02">Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다.</p>
-								</div>
-							</div>
-							<div class="subsection swiper-slide">
-								<div class="review-text">
-									<p class="txt01 text-client">밀키트 공정 및 생산 관리 관련 자문 요청</p>
-									<p class="txt02">Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다.</p>
-								</div>
-							</div>
-							<div class="subsection swiper-slide">
-								<div class="review-text">
-									<p class="txt01 text-client">밀키트 공정 및 생산 관리 관련 자문 요청</p>
-									<p class="txt02">Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다.</p>
-								</div>
-							</div>
-							<div class="subsection swiper-slide">
-								<div class="review-text">
-									<p class="txt01 text-client">밀키트 공정 및 생산 관리 관련 자문 요청</p>
-									<p class="txt02">Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다.</p>
-								</div>
-							</div>
-							<div class="subsection swiper-slide">
-								<div class="review-text">
-									<p class="txt01 text-client">밀키트 공정 및 생산 관리 관련 자문 요청</p>
-									<p class="txt02">Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다. Client 입장에서 필요한 부분을 더 넓고 깊게 고민해주시고 실질적인 해답을 전달 해주셨습니다.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<button type="button" class="swiper-button-direction swiper-button-prev"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>이전</title><path d="M7.581,12l10.96,10.96l-1.061,1.061L5.459,12L17.48-0.021l1.061,1.061L7.581,12z"></path></svg></button>
-					<button type="button" class="swiper-button-direction swiper-button-next"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>다음</title><path d="M5.459,1.04L6.52-0.021L18.541,12L6.52,24.021L5.459,22.96L16.42,12L5.459,1.04z"></path></svg></button>
-					<div class="swiper-pagination"></div>
-				</div>
-				<!-- section -->
-				<div class="section rss-section">
-					<h3 class="section-title"><strong><svg  width="130px" viewBox="0 0 109.853 22.583" xmlns="http://www.w3.org/2000/svg"><title>이전</title><path d="M11 35.947h5.1l.014-9.6a6.726 6.726 0 0 0-7-6.682H1.667v3.845a.686.686 0 0 0 .686.686h6.792a1.841 1.841 0 0 1 1.841 1.841v.178h-6.9A4.092 4.092 0 0 0 0 30.315v1.921a3.786 3.786 0 0 0 4.073 3.726h3.085A6.418 6.418 0 0 0 11 34.527zm-5.882-5.592a.969.969 0 0 1 .969-.969H10.8a.187.187 0 0 1 .187.187v2.222a.187.187 0 0 1-.187.187H6.083a.965.965 0 0 1-.966-.966z" transform="translate(0 -13.382)"/><path d="M296.958 5.417h6.742v-4.29a.551.551 0 0 0-.551-.551h-17.643a.551.551 0 0 0-.551.551v4.29h6.745v17.555h5.256z" transform="translate(-193.851 -.392)" /><path d="M209.76.624h-4.567a.551.551 0 0 0-.551.551V23h5.118z" transform="translate(-139.215 -.425)"/><path d="M100.414 16.174h3.829v-4.489h-3.829V7.921h-4.567a.551.551 0 0 0-.551.551v3.213h-2.142v4.489H95.3v11.8h5.118z" transform="translate(-63.372 -5.389)"/><path d="M236.137 29.907v.115a.934.934 0 0 1-.934.934h-3.715a1.852 1.852 0 0 1-1.852-1.851v-.4h11.15v-3.247a6.771 6.771 0 0 0-6.758-6.783h-2.283a6.839 6.839 0 0 0-6.758 6.863v3.171a6.6 6.6 0 0 0 6.758 6.576h2.283a6.758 6.758 0 0 0 6.6-5.378zm-4.649-6.757h2.8a1.852 1.852 0 0 1 1.849 1.85v.536h-6.5V25a1.852 1.852 0 0 1 1.852-1.852" transform="translate(-153.056 -12.704)"/><path d="M163.469 29.978a.969.969 0 0 1-.969.969h-3.688a1.849 1.849 0 0 1-1.845-1.852v-4.1a1.852 1.852 0 0 1 1.852-1.852h2.8a1.849 1.849 0 0 1 1.845 1.852.189.189 0 0 0 .189.189h4.448a6.766 6.766 0 0 0-6.746-6.517h-2.283a6.772 6.772 0 0 0-6.759 6.785v3.044a6.772 6.772 0 0 0 6.759 6.785h2.283a6.765 6.765 0 0 0 6.686-5.817h-4.357a.22.22 0 0 0-.22.22z" transform="translate(-103.619 -12.696)"/><path d="M66.2 19.628h-.927c-.131-.008-.263 0-.4 0h-1.662a3.833 3.833 0 0 0-2.832 1.436v-1.42h-4.568a.551.551 0 0 0-.551.551v15.739h5.119V24.445a.28.28 0 0 1 .28-.28h4.857a.686.686 0 0 0 .686-.686z" transform="translate(-37.593 -13.351)"/><path transform="translate(42.046 6.296)" d="M0 0h5.118v16.284H0z"/><path d="M136.628 0h-4.3a.821.821 0 0 0-.821.821v4.3h5.118z" transform="translate(-89.465)"/></svg></strong></h3>
-					<p class="section-subtitle"><span class="wbr">각 산업 전문가의 관점이 담긴 칼럼(보고서)을 통해</span> <span class="wbr">기업이 직면한 문제의 해결 책을 찾을 수 있습니다.</span></p>
-					<div class="swiper-container">
-						<ul class="swiper-wrapper rss-list">
-							<li class="swiper-slide data-item">
-								<span class="img"><a href="#"><img src="./../assets/img/main_v3/matching_01.png" /></a></span>
-								<span class="text"><a href="#">휴넷 탤런트뱅크, 출시 3년만 ‘긱 경제 ‘대표 플랫폼으로 성장</a></span>
-							</li>
-							<li class="swiper-slide data-item">
-								<span class="img"><a href="#"><img src="./../assets/img/main_v3/matching_02.png" /></a></span>
-								<span class="text"><a href="#">휴넷 탤런트뱅크, 출시 3년만 ‘긱 경제 ‘대표 플랫폼으로 성장</a></span>
-							</li>
-							<li class="swiper-slide data-item">
-								<span class="img"><a href="#"><img src="./../assets/img/main_v3/matching_03.png" /></a></span>
-								<span class="text"><a href="#">휴넷 탤런트뱅크, 출시 3년만 ‘긱 경제 ‘대표 플랫폼으로 성장</a></span>
-							</li>
-							<li class="swiper-slide data-item">
-								<span class="img"><a href="#"><img src="./../assets/img/main_v3/matching_05.jpg" /></a></span>
-								<span class="text"><a href="#">휴넷 탤런트뱅크, 출시 3년만 ‘긱 경제 ‘대표 플랫폼으로 성장</a></span>
-							</li>
-						</ul>
-					</div>
-					<div class="section-aside">
-						<a href="#" class="more-data">전체보기</a>
-					</div>
-				</div>
-				<!-- //section -->
-				<div class="client-expert-guide-section">
-					<div class="client-guide-banner">
-						<a href="#">
-							<div class="text">
-								<span>업무에 도움을 줄</span>
-								<strong class="wbr">전문가를 찾고 계신가요?</strong>
-							</div>
-							<div class="link-text">
-								Client 이용 안내 보기
-							</div>
-						</a>
-					</div>
-					<div class="expert-guide-banner">
-						<a href="#">
-							<div class="text">
-								<strong>원하는 일을 자유롭게</strong>
-								<span class="wbr">수행하고 싶으신가요?</span>
-							</div>
-							<div class="link-text">
-								Expert 이용 안내 보기
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="section request-project">
-					<h3 class="section-title"><strong>문의</strong> 및 <strong>상담</strong></h3>
-					<p class="section-subtitle"><span class="wbr">상담시간 : 08:00 ~ 19:00 (월~금)</span></p>
-					<div class="request-project-wrap">
-						<ul class="data-list">
-							<li class="data-item">
-								<span class="data-rows">
-									<span class="data-head">고객센터</span>
-									<span class="data-body">
-										<a class="text" href="#none">1833-4730</a>
-									</span>
-								</span>
-							</li>
-							<li class="data-item">
-								<span class="data-rows">
-									<span class="data-head">실시간으로<br>채팅 상담 받으세요!</span>
-									<span class="data-body">
-										<a href="#" class="btn btn-sm btn-pill btn-primary">채팅 상담</a>
-									</span>
-								</span>
-							</li>
-							<li class="data-item">
-								<span class="data-rows">
-									<span class="data-head">궁금한 사항이 있으시다면<br>1:1 문의에 남겨주세요!</span>
-									<span class="data-body">
-										<a href="#" class="btn btn-sm btn-pill btn-client">1:1 문의하기</a>
-									</span>
-								</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="section notice-section">
-					<h3 class="section-title"><span class="wbr">공지사항</span></h3><!-- 이벤트시 타이틀 이벤트로 변경-->
-					<ul class="data-list">
-						<li class="data-item">
-							<a href="#">[필독] 8월 29일, 서비스 업데이트로 인한 사이트 이용 제한 안내 [필독] 8월 29일, 서비스 업데이트로 인한 사이트 이용 제한 안내</a>
-						</li>
-					</ul>
-					<div class="section-aside">
-						<a href="#" class="more-data">전체보기</a>
-					</div>
-				</div>
-			</div>
-			<!-- //content-body -->
-
-			<!-- 220210 이벤트 팝업 -->
-			<style>
-				.event-popup {
-					position: fixed;
-					left:50%;
-					bottom:20px;
-					width:650px;
-					margin-left: -625px;
-					overflow: hidden;
-					z-index: 30;
-					font-size: 0;
-					opacity: 0;
-					visibility: hidden;
-					-webkit-transition: visibility, opacity;
-					-moz-transition: visibility, opacity;
-					-ms-transition: visibility, opacity;
-					transition: visibility, opacity;
-					-webkit-transition-delay: 0.7s;
-					-moz-transition-delay: 0.7s;
-					-ms-transition-delay: 0.7s;
-					transition-delay: 0.7s;
-				}
-				.event-popup * {outline: none;}
-				.event-popup .event-popup-local {
-					display: block;
-					overflow: hidden;
-					width: 100%;
-					height: 100%;
-					-webkit-animation-name: event-popup-close;
-					-webkit-animation-duration: 0.7s;
-					-webkit-animation-timing-function: ease-in-out;
-					-webkit-animation-fill-mode: forwards;
-					animation-name: event-popup-close;
-					animation-duration: 0.7s;
-					animation-timing-function: ease-in-out;
-					animation-fill-mode: forwards;
-				}
-				.event-popup .popup-control {
-					position: absolute;
-					left: 17px;
-					bottom:11px;
-				}
-				.event-popup .popup-control button {
-					border:0;
-					background: none;
-					width:141px;
-					height:24px;
-					padding:0;
-					font-size:0;
-					line-height:0;
-					cursor: pointer;
-				}
-				.event-popup .close {
-					display: block;
-					position: absolute;
-					top: 12px;
-					right: 12px;
-					overflow: visible;
-					margin: 0;
-					padding: 4px;
-					width: 30px;
-					height: 30px;
-					border: 0 none transparent;
-					cursor: pointer;
-					background-color: transparent;
-					-webkit-appearance: none;
-				}
-				.event-popup .close svg {
-					display: block;
-					position: relative;
-					top: 0;
-					left: 0;
-					width: 20px;
-					height: 20px;
-				}
-				.event-popup a img {
-					width:100%;
-				}
-				.event-popup a img.pc {
-					display: block;
-				}
-				.event-popup a img.mobile {
-					display: none;
-				}
-				body.active-event-popup .event-popup {
-					opacity: 1;
-					visibility: visible;
-				}
-				body.active-event-popup .event-popup .event-popup-local {
-					width: 0;
-					height: 0;
-					-webkit-animation-name: event-popup-open;
-					-webkit-animation-duration: 0.7s;
-					-webkit-animation-timing-function: ease-in-out;
-					-webkit-animation-delay: 2s;
-					-webkit-animation-fill-mode: forwards;
-					animation-name: event-popup-open;
-					animation-duration: 0.7s;
-					animation-timing-function: ease-in-out;
-					animation-delay: 2s;
-					animation-fill-mode: forwards;
-				}
-				@-webkit-keyframes event-popup-open {
-					0% {width: 0; height: 0;}
-					75% {width: 110%; height: 110%;}
-					100% {width: 100%; height: 100%;}
-				}
-				@keyframes event-popup-open {
-					0% {width: 0; height: 0;}
-					75% {width: 110%; height: 110%;}
-					100% {width: 100%; height: 100%;}
-				}
-				@-webkit-keyframes event-popup-close {
-					0% {width: 100%; height: 100%;}
-					75% {width: 110%; height: 110%;}
-					100% {width: 0; height: 0;}
-				}
-				@keyframes event-popup-close {
-					0% {width: 100%; height: 100%;}
-					75% {width: 110%; height: 110%;}
-					100% {width: 0; height: 0;}
-				}
-				@media (max-width: 991px) {
-					body.active-event-popup::after {
-						position: fixed;
-						left:0;
-						top:0;
-						width:100%;
-						height:100%;
-						content: '';
-						background: rgba(0,0,0,0.5);
-						z-index: 20;
-						visibility: visible;
-					}
-
-					.event-popup {
-						left:0;
-						top:180px;
-						bottom: inherit;
-						width:calc(100% - 32px);
-						margin:0 16px;
-					}
-					.event-popup .close {
-						right:6px;
-						top:6px;
-					}
-					.event-popup .popup-control {
-						left:9px;
-						bottom: 8px;
-					}
-					.event-popup a img.pc {
-						display: none;
-					}
-					.event-popup a img.mobile {
-						display: block;
-					}
-				}
-			</style>
-			<div class="event-popup">
-				<div class="event-popup-local">
-					<div class="event-popup-body">
-						<a href="#">
-							<img src="./../assets/img/event/img_data_220302.png" class="pc" alt="">
-							<img src="./../assets/img/event/img_data_220302_m.png" class="mobile" alt="">
-						</a>
-					</div>
-					<div class="popup-control">
-						<button type="button" id="pop_today" title="오늘 하루 열지 않기">오늘 하루 열지 않기</button>
-					</div>
-					<button type="button" class="close" title="닫기">닫기</button>
-				</div>
-			</div>
-			<script type="text/javascript">
-				function setCookie( name, value, expirehours ) {
-					var todayDate = new Date();
-					todayDate.setHours( todayDate.getHours() + expirehours );
-					document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
-				}
-
-				$("#pop_today").click(function(){
-					setCookie( "gcookie", "done" , 24 );
-					$('body').removeClass('active-event-popup');
-				});
-
-				$(function() {
-					if (new Date() < new Date('2022/03/03 00:00:00')) {
-						var getCookie = function (name) {
-							var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
-							return value ? value[2] : null;
-						};
-						var cookieVal = getCookie("gcookie");
-						if (cookieVal != "done") {
-							$('body').addClass('active-event-popup');
-						}
-						$('.event-popup .close').on('click', function () {
-							$('body').removeClass('active-event-popup');
-						});
-					}
-				});
-			</script>
-			<!-- //220210 이벤트 팝업 -->
-			<script type="text/javascript">
-				$(function() {
-					// 220406 슬라이드 추가
-					// 상단비쥬얼 
-					var mainVisualSlide = new Swiper('.main-visual-top .swiper-container', {
-						loop: true,
-						autoplay: {
-							delay: 5000, //220412 수정
-							disableOnInteraction: false,
-						},
-						observer:true,
-   						observeParents:true,
-						navigation: {//220418 수정
-							nextEl: '.main-visual-top .swiper-button-next',
-							prevEl: '.main-visual-top .swiper-button-prev',
-						},
-						pagination: {
-							el: '.main-visual-top .swiper-pagination',
-							type: 'bullets',
-							clickable: true, //220412 추가
-						},
-						effect: 'fade',
-						fadeEffect: {
-							crossFade: true,
-						}
-					});
-
-					// RSS articleT
-					var rssList = new Swiper('.rss-section .swiper-container', {
-						slidesPerView: 'auto',
-						speed: 500,
-						noSwiping: true,
-						noSwipingClass : 'rss-list',
-						breakpoints: {
-							991: {
-								slidesPerView: 'auto',
-								centeredSlides: true,
-								spaceBetween: 10,
-								noSwiping: false,
-							},
-						}
-					});
-
-					// 전문 분야
-					var specializationList = new Swiper('.specialization-section .swiper-container', {
-						loop: true,//220412 수정
-						speed: 500,
-						slidesPerView : 8,
-						slidesPerGroup : 8,
-						navigation: {  
-							nextEl: '.specialization-section .swiper-button-next',
-							prevEl: '.specialization-section .swiper-button-prev',
-						},
-						pagination: {
-							el: '.specialization-section .swiper-pagination',
-							type: 'bullets',
-							clickable: true,
-						},
-						observer:true,
-						observeParents:true,
-						breakpoints: {
-							991: {
-								slidesPerView : 3,
-								spaceBetween: 8,
-								slidesPerGroup : 3,
-							},
-						}
-					});
-
-
-					/**
-					 * Talentbank 성공 사례 소개
-					 * 탭 버튼
-					 */
-					 $('.tab-list').each(function() {
-						var elem = $(this);
-						elem.find('.tab-item').each(function(i) {
-
-							var button = $(this).find('.tab-name');
-							var target = $(button).attr('href');
-								$(target).addClass('tabs-target');
-
-							button.on({
-								click: function(e) {
-									e.preventDefault();
-									$(this).parent('.tab-item').addClass('current').siblings('.tab-item').removeClass('current');
-									$(target).addClass('active').siblings('.tabs-target').removeClass('active');
-
-									// 탭을 클릭하면 슬라이드 초기화
-									businessCaseProject.slideTo(0);
-									businessCaseAdvice.slideTo(0);
-									businessCaseHeadHunting.slideTo(0);
-									businessCaseFuncWork.slideTo(0);
-								}
-							});
-						});
-					});
-					var tablistcurrentItem = 0;
-					$('.category-list.theme-a li').each(function(i) {
-						if ($(this).hasClass('current')) {
-							tablistcurrentItem = i;
-						}
-					});
-					var tablistSwiper = new Swiper('.tab-list.swiper-container', {
-						slidesPerView: "auto",
-						initialSlide: tablistcurrentItem,
-						slidesPerGroup: 2,
-						freeMode: true,
-						grabCursor: true,
-						simulateTouch: true,
-						preventClicks: true,
-						paginationClickable: true,
-						autoHeight: true,
-						noSwiping: true,
-						noSwipingClass : 'tab-list-swiper-wrapper',
-						breakpoints: {
-							991: {
-								slidesPerGroup: 1,
-								noSwiping: false,
-							},
-						}
-					});
-					$(window).resize(function() {
-						tablistSwiper.slideTo(tablistcurrentItem);
-					});
-
-					/**
-					 * Talentbank 성공 사례
-					 * 슬라이드 리스트 (Project)
-					 */
-					 var businessCaseProject = new Swiper ('#businessCaseProject', {
-						spaceBetween:20,
-						navigation: {
-							nextEl: '#businessCaseProject +.swiper-btn-area .swiper-button-next',
-							prevEl: '#businessCaseProject +.swiper-btn-area .swiper-button-prev',
-						},
-						pagination: {
-							el: '#businessCaseProject +.swiper-btn-area .swiper-pagination',
-							type: 'bullets',
-							clickable: true,
-						},
-						observer:true,
-						observeParents:true,
-						breakpoints: {
-							991: {
-								slidesPerView: 'auto',
-								centeredSlides: true,
-								spaceBetween:10,
-							},
-						}
-					});
-
-					/**
-					 * Talentbank 성공 사례
-					 * 슬라이드 리스트 (자문)
-					 */
-					 var businessCaseAdvice = new Swiper ('#businessCaseAdvice', {
-						spaceBetween:20,
-						navigation: {
-							nextEl: '#businessCaseAdvice +.swiper-btn-area .swiper-button-next',
-							prevEl: '#businessCaseAdvice +.swiper-btn-area .swiper-button-prev',
-						},
-						pagination: {
-							el: '#businessCaseAdvice +.swiper-btn-area .swiper-pagination',
-							type: 'bullets',
-							clickable: true,
-						},
-						observer:true,
-						observeParents:true,
-						breakpoints: {
-							991: {
-								slidesPerView: 'auto',
-								centeredSlides: true,
-								spaceBetween:10,
-							},
-						}
-					});
-
-					/**
-					 * Talentbank 성공 사례
-					 * 슬라이드 리스트 (헤드헌팅)
-					 */
-					 var businessCaseHeadHunting = new Swiper ('#businessCaseHeadHunting', {
-						spaceBetween:20,
-						navigation: {
-							nextEl: '#businessCaseHeadHunting +.swiper-btn-area .swiper-button-next',
-							prevEl: '#businessCaseHeadHunting +.swiper-btn-area .swiper-button-prev',
-						},
-						pagination: {
-							el: '#businessCaseHeadHunting +.swiper-btn-area .swiper-pagination',
-							type: 'bullets',
-							clickable: true,
-						},
-						observer:true,
-						observeParents:true,
-						breakpoints: {
-							991: {
-								slidesPerView: 'auto',
-								centeredSlides: true,
-								spaceBetween:10,
-							},
-						}
-					});
-					
-					/**
-					* Talentbank 성공 사례
-					* 슬라이드 리스트 (Functional Work)
-					*/
-					var businessCaseFuncWork = new Swiper ('#businessCaseFuncWork', {
-						spaceBetween:20,
-						navigation: {
-							nextEl: '#businessCaseFuncWork +.swiper-btn-area .swiper-button-next',
-							prevEl: '#businessCaseFuncWork +.swiper-btn-area .swiper-button-prev',
-						},
-						pagination: {
-							el: '#businessCaseFuncWork +.swiper-btn-area .swiper-pagination',
-							type: 'bullets',
-							clickable: true,
-						},
-						observer:true,
-						observeParents:true,
-						breakpoints: {
-							991: {
-								slidesPerView: 'auto',
-								centeredSlides: true,
-								spaceBetween:10,
-							},
-						}
-					});
-
-					
-					// Client & 전문가 이용 후기
-					var reviewList = new Swiper('.client-expert-review .swiper-container', {
-						loop: true, //220412 수정
-						speed: 500,
-						spaceBetween:30,
-						slidesPerView: 2,
-						slidesPerGroup : 2,
-						navigation: {  
-							nextEl: '.client-expert-review .swiper-button-next',
-							prevEl: '.client-expert-review .swiper-button-prev',
-						},
-						pagination: {
-							el: '.client-expert-review .swiper-pagination',
-							type: 'bullets',
-							clickable: true,
-						},
-						breakpoints: {
-							991: {
-								slidesPerView: 'auto',
-								centeredSlides: true,
-								spaceBetween:10,
-								slidesPerGroup : 1,
-							},
-						}
-					});
-				});
-			</script>
-		</div>
-		<!-- //local-body -->
-	</div>
-	<!-- //page-body -->
-
-	<a href="#page" class="back-top">top</a>
-</div>
+	<script type="text/javascript">
+	$( document ).ready(function() {
+		
+	});
+	</script>
 </body>
 </html>
