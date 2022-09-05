@@ -16,8 +16,8 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('./dist/assets'));
 });
 
-hashClassName('wrap');
-hashClassName('contents');
+hashClassName('expand-control');
+hashClassName('tree');
 
 gulp.task('js', function() {
   return gulp.src([
