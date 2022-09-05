@@ -1,0 +1,49 @@
+{
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.27.10",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-ejs": "^3.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1",
+    "jquery": "^3.6.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.4.3",
+    "es6-promisify": "^7.0.0",
+    "express": "^4.18.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-minify-css": "^1.2.4",
+    "node": "^11.15.0",
+    "package.json": "^2.0.1",
+    "sass": "^1.54.8"
+  },
+  "name": "tae0",
+  "description": "tae0_Git_Test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp && node index",
+    "start": "gulp && gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyty83/tae0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skyty83/tae0/issues"
+  },
+  "homepage": "https://github.com/skyty83/tae0#readme"
+}
