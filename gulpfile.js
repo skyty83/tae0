@@ -3,7 +3,6 @@ const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const del = require('del');
 const ejs = require("gulp-ejs");
-const hashClassName = require('@ericcarraway/css-classname-hash').default;
 
 gulp.task('del:js', function(){
   return del(['./dist/assets/all.js']);
@@ -16,8 +15,6 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('./dist/assets'));
 });
 
-hashClassName('expand-control');
-hashClassName('tree');
 
 gulp.task('js', function() {
   return gulp.src([
