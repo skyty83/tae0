@@ -19,6 +19,8 @@ gulp.task('sass', function(){
 gulp.task('js', function() {
   return gulp.src([
     './node_modules/jquery/dist/jquery.js',
+    './node_modules/bootstrap/dist/js/bootstrap.min.js',
+    './node_modules/aos/dist/aos.js',
     './src/js/ui.js'
   ]) 
     .pipe(concat('all.js'))
