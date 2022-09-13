@@ -16,4 +16,6 @@ tae0_Git_Test
 * npm install gulp-concat@2.6.1
 * npm start
 
-* dist폴더에 생성된 html 확인.
+* dist폴더에 생성된 html 확인
+
+* https://skyty83.github.io/tae0/
