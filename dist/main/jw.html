@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Talentbank</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+<link rel="stylesheet" href="https://www.talentbank.co.kr/assets/front.introduce.css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/detectizr/2.2.0/detectizr.min.js"></script>
+<script type="text/javascript" src="https://www.talentbank.co.kr/assets/all.js"></script>
+</head>
+<body style="background: #4c4c4c; color: #fff;">
+	<div class="wrap">
+		<h1 class="logo"><i class="fa fa-file-code"></i> jQuery</h1>
+		<div class="contents">
+			<div class="section service-review client-action">
+				<h4 class="section-title"><span class="wbr">탤런트뱅크 <strong>서비스 이용 후기</strong></span></h4>
+				<ul class="data-list">
+					<li class="data-item">
+						<a class="data-rows direct-video-player" href="#videoPlayer1" targetdiv="videoPlayer1" onclick="lf_openMovPop('videoPlayer1');">
+							<span class="data-face"><span class="data-cover"><img class="thumbnail" src="https://www.talentbank.co.kr/assets/img/introduce/client_video-thumbnail_220818_1.png" /></span></span>
+							<span class="data-main"></span>
+						</a>
+						<p class="text1">&ldquo;탤런트뱅크가 매칭해준 전문가 조언으로<br>시즐은 55억원 투자 유치에 성공했습니다.&rdquo;</p>
+						<div class="data-name"><span>이지현</span>시즐 대표</div>
+					</li>
+					<li class="data-item">
+						<a class="data-rows direct-video-player" href="#videoPlayer2" targetdiv="videoPlayer2" onclick="lf_openMovPop('videoPlayer2');">
+							<span class="data-face"><span class="data-cover"><img class="thumbnail" src="https://www.talentbank.co.kr/assets/img/introduce/client_video-thumbnail_220818_2.png" /></span></span>
+							<span class="data-main"></span>
+						</a>
+						<p class="text1">&ldquo;탤런트뱅크 전문가의 전문성 덕분에<br>지불한 비용의 다섯 배 효과를 봤습니다.&rdquo;</p>
+						<div class="data-name"><span>정승익</span>메타피아 대표</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- layer-popup -->
+		<div class="layer-popup video-player" id="videoPlayer1">
+			<!-- popup-rows -->
+			<div class="popup-rows">
+				<!-- popup-cols -->
+				<div class="popup-cols">
+					<div class="popup-head">
+						<h4 class="popup-title">Client 인터뷰</h4>
+					</div>
+					<div class="popup-body">
+						<div class="player" id="playerMatchingPlatform_01"></div>
+					</div>
+					<button type="button" class="close" onclick="lf_closeMovPop(1)">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><polygon fill="#FFFFFF" points="42.475,17.602 32,28.073 21.527,17.602 17.602,21.528 28.074,32 17.602,42.471 21.527,46.396 32,35.926 42.475,46.396 46.4,42.471 35.926,32 46.4,21.528 "/></svg>
+					</button>
+				</div>
+				<!-- //popup-cols -->
+			</div>
+			<!-- //popup-rows -->
+		</div>
+		<!-- //layer-popup -->
+
+		<!-- layer-popup -->
+		<div class="layer-popup video-player" id="videoPlayer2">
+			<!-- popup-rows -->
+			<div class="popup-rows">
+				<!-- popup-cols -->
+				<div class="popup-cols">
+					<div class="popup-head">
+						<h4 class="popup-title">Client 인터뷰</h4>
+					</div>
+					<div class="popup-body">
+						<div class="player" id="playerMatchingPlatform_02"></div>
+					</div>
+					<button type="button" class="close" onclick="lf_closeMovPop(2)">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"><polygon fill="#FFFFFF" points="42.475,17.602 32,28.073 21.527,17.602 17.602,21.528 28.074,32 17.602,42.471 21.527,46.396 32,35.926 42.475,46.396 46.4,42.471 35.926,32 46.4,21.528 "/></svg>
+					</button>
+				</div>
+				<!-- //popup-cols -->
+			</div>
+			<!-- //popup-rows -->
+		</div>
+		<!-- //layer-popup -->
+	</div>
+	<script type="text/javascript" src="https://www.talentbank.co.kr/assets/jwplayer-7.12.2/jwplayer.js"></script>
+	<script type="text/javascript">
+		jwplayer.key = "YOK5EjiA/8/EgwSAg4lk0jus4US6fwATBREoXNkzsks=";
+		function lf_openMovPop(targetdiv) {
+			$("div.video-player").removeClass("active");
+			$("#"+targetdiv).addClass("active");
+			
+			if ("videoPlayer1" == targetdiv) {
+				jwplayer("playerMatchingPlatform_01").setup({
+					file: "https://www.youtube.com/watch?v=-JhoMGoAfFc",
+					"width": "100%",
+					aspectratio: "16:9",
+					autostart: true,
+					repeat: false
+				});
+			} else if ("videoPlayer2" == targetdiv) {
+				jwplayer("playerMatchingPlatform_02").setup({
+					file: "https://www.youtube.com/watch?v=fjbfzbu8-Ic",
+					"width": "100%",
+					aspectratio: "16:9",
+					autostart: true,
+					repeat: false
+				});
+			}
+		}
+
+		function lf_closeMovPop(j) {
+			jwplayer("playerMatchingPlatform_0"+j).stop();
+			$("#videoPlayer"+j).removeClass("active");
+		}
+	</script>
+</body>
+</html>
