@@ -3,6 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const del = require('del');
 const ejs = require("gulp-ejs");
+const sourcemaps  = require('gulp-sourcemaps');
 
 gulp.task('del:js', function(){
   return del(['./dist/assets/all.js']);
@@ -11,7 +12,9 @@ gulp.task('del:js', function(){
 
 gulp.task('sass', function(){
     return gulp.src('./src/scss/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/assets'));
 });
 

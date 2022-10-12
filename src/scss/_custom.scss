@@ -71,3 +71,17 @@ table {
 @media only screen and (min-width : 1200px) {
  
 }
+
+@mixin flex-box {
+	display: -webkit-box; // old
+	display: -moz-box; // old
+	display: -ms-flexbox; // ie
+	display: -webkit-flex; // new
+	display: flex; // new
+}
+
+@mixin radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
